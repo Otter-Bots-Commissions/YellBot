@@ -14,9 +14,14 @@
     "@sapphire/time-utilities": "^1.7.5",
     "@sapphire/type": "^2.2.4",
     "@sapphire/utilities": "^3.9.1",
+    "@types/better-sqlite3": "^7.6.0",
+    "better-sqlite3": "^7.6.2",
     "colorette": "^2.0.19",
     "discord-api-types": "^0.33.5",
     "discord.js": "^13.10.2",
+    "dotenv": "^16.0.2",
+    "promise-mysql": "^5.2.0",
+    "quick.db": "^9.0.6",
     "reflect-metadata": "^0.1.13"
   },
   "devDependencies": {
