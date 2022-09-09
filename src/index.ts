@@ -1,4 +1,4 @@
-import './lib/setup';
+import './lib/setup.js';
 import { LogLevel, SapphireClient } from '@sapphire/framework';
 
 const client = new SapphireClient({
