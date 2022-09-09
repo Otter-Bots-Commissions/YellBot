@@ -29,6 +29,7 @@ export class UserCommand extends Command {
 		const user = interaction.options.getUser('user');
 		const xp = interaction.options.getInteger('xp');
 		await this.container.db.set(`level_${interaction.guildId}_${user?.id}`, xp);
+		this.container.logger.debug(await this.container.db.get(`level_${interaction.guildId}_${user?.id}`));
 		interaction.reply({content: `Set ${inlineCodeBlock((user?.username) as any)}'s xp to ${xp}`, ephemeral: true});
 	}
 	private async removeRole(interaction: Command.ChatInputInteraction) {

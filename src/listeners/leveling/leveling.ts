@@ -9,7 +9,7 @@ export class UserEvent extends Listener {
   public async run(message: Message) {
     if (message.author.bot) return;
     // XP addition
-    if (await this.container.db.get(`levels_${message.guildId}_${message.member?.id}`) == undefined) this.container.db.set(`levels_${message.guildId}_${message.member?.id}`, 0);
+    if (await this.container.db.get(`levels_${message.guildId}_${message.member?.id}`) == undefined || await this.container.db.get(`levels_${message.guildId}_${message.member?.id}`) ==  null) this.container.db.set(`levels_${message.guildId}_${message.member?.id}`, 0);
     await this.container.db.add(`levels_${message.guildId}_${message.member?.id}`, 1);
     this.container.logger.info(`Added 1 xp to ${message.member?.id}`);
     this.container.logger.debug(await this.container.db.get(`levels_${message.guildId}_${message.member?.id}`));
