@@ -3,7 +3,7 @@ import { CommandOptions, Command, ChatInputCommand} from '@sapphire/framework'
 import { inlineCodeBlock } from '@sapphire/utilities';
 
 @ApplyOptions<CommandOptions>({
-	description: 'The leveling tree of commands for config / admin'
+	description: 'The levelling tree of commands for config / admin'
 })
 export class UserCommand extends Command {
 	public async chatInputRun(interaction: Command.ChatInputInteraction) {
@@ -17,7 +17,7 @@ export class UserCommand extends Command {
 			case 'set':
 				return await this.setXp(interaction);
 			default:
-				return interaction.reply({content: 'Invalid subcommand', ephemeral: true});
+				return interaction.reply({content: 'Invalid subcommand.', ephemeral: true});
 		}
 	}
 	private async resetXp(interaction: Command.ChatInputInteraction) {
@@ -54,32 +54,32 @@ export class UserCommand extends Command {
 			.addSubcommandGroup((group) =>
 			  group
 			  	.setName('roles')
-				.setDescription('The config subtree for levelling roles')
+				.setDescription('The configuration subtree for levelling roles.')
 				.addSubcommand((subcommand) =>
 					subcommand
 						.setName('add')
-						.setDescription('Add a role to the levelling system')
+						.setDescription('Add a role to the levelling system.')
 						.addRoleOption((option) =>
 							option
 								.setName('role')
-								.setDescription('The role to add')
+								.setDescription('The role to add.')
 								.setRequired(true)
 						)
 						.addIntegerOption((option) =>
 							option
 								.setName('xp')
-								.setDescription('The amount of xp required to get the role')
+								.setDescription('The amount of XP required to get the role.')
 								.setRequired(true)
 						)
 				)
 				.addSubcommand((subcommand) =>
 					subcommand
 						.setName('remove')
-						.setDescription('Remove a role from the levelling system')
+						.setDescription('Remove a role from the levelling system.')
 						.addRoleOption((option) =>
 							option
 								.setName('role')
-								.setDescription('The role to remove')
+								.setDescription('The role to remove.')
 								.setRequired(true)
 					)
 				)
@@ -91,11 +91,11 @@ export class UserCommand extends Command {
 				.addSubcommand((subcommand) =>
 					subcommand
 						.setName('reset')
-						.setDescription('Reset the xp of a user')
+						.setDescription('Reset the XP of a user.')
 						.addUserOption((option) =>
 							option
 								.setName('user')
-								.setDescription('The user to reset')
+								.setDescription('The user to reset.')
 								.setRequired(true)
 						)
 				)
@@ -106,13 +106,13 @@ export class UserCommand extends Command {
 						.addUserOption((option) =>
 							option
 								.setName('user')
-								.setDescription('The user to set')
+								.setDescription('The user to set.')
 								.setRequired(true)
 					)
 					.addIntegerOption((option) =>
 						option
 							.setName('xp')
-							.setDescription('The amount of xp to set')
+							.setDescription('The amount of XP to set.')
 							.setRequired(true)
 					)
 				)
