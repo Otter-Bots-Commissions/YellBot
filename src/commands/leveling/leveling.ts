@@ -3,7 +3,8 @@ import { CommandOptions, Command, ChatInputCommand} from '@sapphire/framework'
 import { inlineCodeBlock } from '@sapphire/utilities';
 
 @ApplyOptions<CommandOptions>({
-	description: 'The leveling tree of commands for config / admin'
+	description: 'The leveling tree of commands for config / admin',
+	requiredUserPermissions: ['MANAGE_GUILD'],
 })
 export class UserCommand extends Command {
 	public async chatInputRun(interaction: Command.ChatInputInteraction) {

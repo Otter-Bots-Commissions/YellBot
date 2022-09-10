@@ -178,10 +178,10 @@
   dependencies:
     cross-fetch "^3.1.5"
 
-"@sapphire/framework@next":
-  version "3.1.2-next.c71b8e5.0"
-  resolved "https://registry.yarnpkg.com/@sapphire/framework/-/framework-3.1.2-next.c71b8e5.0.tgz#60d12b9be5f336f6d1c68753ff04304a7b499ff0"
-  integrity sha512-JVN6yA8FVACbAfRJcavnNZRaLYxPJbN+Tcn99eCvRQ7MRwVAtCyrxr7dzqR4Qy/Rb3vmWVRWkvjpeyHQtbYt9g==
+"@sapphire/framework@^3.x":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@sapphire/framework/-/framework-3.1.1.tgz#e4ab18cc0c188fac3e6e776bb83cdfde488f3a58"
+  integrity sha512-dWWIhqFwVZ7nMJ6o7mIhgOAQhSfaue6IPyRSYhXuLEOU9uiQpLioXaYckVAVspRGAc5MqIalOV2htjQF2nCgjw==
   dependencies:
     "@discordjs/builders" "^0.16.0"
     "@sapphire/discord-utilities" "^2.11.6"

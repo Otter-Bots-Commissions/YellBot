@@ -5,10 +5,11 @@
     "arguments": "arguments",
     "commands": "commands",
     "listeners": "listeners",
-    "preconditions": "preconditions"
+    "preconditions": "preconditions",
+    "interaction-handlers": "interaction-handlers"
   },
   "customFileTemplates": {
-    "enabled": false,
-    "location": ""
+    "enabled": true,
+    "location": "sapphire-templates/"
   }
 }
