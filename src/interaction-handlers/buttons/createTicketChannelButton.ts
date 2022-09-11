@@ -19,10 +19,6 @@ export class UserInteractionHandler extends InteractionHandler {
                     .setCustomId('closeTicket')
                     .setLabel('Close Ticket')
                     .setStyle('DANGER'),
-                new MessageButton()
-                    .setCustomId('transcriptTicket')
-                    .setLabel('Generate Transcript')   
-                    .setStyle('SECONDARY'),
             );
         interaction.reply({ content: `Created Ticket!`, ephemeral: true });
         channel?.send({ content: `Ticket control panel`, components: [row] });
