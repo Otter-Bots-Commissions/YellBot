@@ -2,7 +2,7 @@ import { ApplyOptions } from '@sapphire/decorators';
 import { Command } from '@sapphire/framework';
 
 @ApplyOptions<Command.Options>({
-	description: 'config setup command',
+	description: 'ticket config setup command',
 })
 export class UserCommand extends Command {
 	public override registerApplicationCommands(registry: Command.Registry) {
