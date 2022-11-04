@@ -20,7 +20,7 @@ export class UserCommand extends Command {
 				)
 		)
 		{
-			idHits: ['1017522085196742757']
+			idHits: ['1017522085196742757', '1038170029352550450']
 		}
 	}
 

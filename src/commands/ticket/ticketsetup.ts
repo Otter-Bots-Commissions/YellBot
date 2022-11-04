@@ -18,7 +18,7 @@ export class UserCommand extends Command {
 				)
 		)
 		{
-			IdHints: ['1017901309787127839']
+			IdHints: ['1017901309787127839', '1038170026559156384']
 		}
 	}
 
