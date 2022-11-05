@@ -1,2 +1,2 @@
 # YellBot
-discord bot for yell3x
+ A discord bot for Yell3x.
