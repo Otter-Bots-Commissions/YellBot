@@ -16,7 +16,7 @@ export class UserCommand extends Command {
 				.addUserOption((option) =>
 					option
 						.setName('user')
-						.setDescription('The user to get the xp of (if you want to get someone elses')
+						.setDescription('The user to get the xp of')
 				)
 		)
 		{
