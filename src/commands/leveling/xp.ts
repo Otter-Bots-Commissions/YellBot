@@ -5,7 +5,7 @@ import { readFile } from 'fs/promises';
 import { MessageAttachment } from 'discord.js';*/
 
 @ApplyOptions<Command.Options>({
-	description: 'Your XP'
+	description: 'View your XP'
 })
 export class UserCommand extends Command {
 	public override registerApplicationCommands(registry: Command.Registry) {
@@ -16,7 +16,7 @@ export class UserCommand extends Command {
 				.addUserOption((option) =>
 					option
 						.setName('user')
-						.setDescription('The user to get the xp of')
+						.setDescription('View a users XP')
 				)
 		)
 		{
